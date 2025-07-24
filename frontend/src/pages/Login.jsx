@@ -19,7 +19,7 @@ export default function Login() {
       login({ username: "admin", role: "admin" });
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("userRole", "admin");
-      navigate("/admin-dashboard");
+      navigate("/");
       return;
     }
     const response = await fetch("http://127.0.0.1:8000/api/eventsapp/login/", {

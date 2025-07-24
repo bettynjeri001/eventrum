@@ -20,7 +20,7 @@ export default function Navbar() {
 
   let navLinks = [
     { path: "/", name: "Home", icon: <FiHome className="mr-2 text-orange-500" /> },
-    { path: "/contact", name: "Contact", icon: <FiMail className="mr-2 text-orange-500" /> },
+    // { path: "/contact", name: "Contact", icon: <FiMail className="mr-2 text-orange-500" /> },
   ];
 
   if (currentUser && currentUser.role === "organizer") {
